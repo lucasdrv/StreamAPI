@@ -1,1 +1,1 @@
-# sampletext
+# Resolução de exercícios sobre StreamAPI
