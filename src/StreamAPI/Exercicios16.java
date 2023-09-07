@@ -10,10 +10,10 @@ public class Exercicios16 {
 //	uma contendo os números pares e outra contendo os números ímpares da lista original, 
 //	e exiba os resultados no console.
 	
-	private static List<Integer>[] oddsAndEvents(List<Integer> nums) {
-		ArrayList<Integer[]> Listas = new ArrayList<Integer[]>();
-		Listas.add((Integer[]) nums.stream().filter(n -> n % 2 == 0).toArray());
-		Listas[1].addAll(nums.stream().filter(n -> n % 2 == 1).toList());
+	private static ArrayList<List<Integer>> oddsAndEvents(List<Integer> nums) {
+		ArrayList<List<Integer>> Listas = new ArrayList<>();
+		Listas.add(nums.stream().filter(n -> n % 2 == 0).toList());
+		Listas.add(nums.stream().filter(n -> n % 2 == 1).toList());
 		return Listas;
 		
 	}
